@@ -39,3 +39,36 @@ function inOrder(list) {
 }
 
 console.log(inOrder(x))
+
+function largest(list) {
+    let cache=0
+    list.forEach(element => {
+        if (element>cache) {
+            cache = element
+        }
+    });
+    return cache
+}
+
+console.log(largest(x))
+
+function absolute(list) {
+    let out=new Array
+    list.forEach(element => {
+        out.push(Math.abs(element))
+    });
+    return out
+}
+console.log(absolute(x))
+
+function even(list) {
+    let out =new Array
+    list.forEach(element => {
+        if(element%2 ==0) {
+            out.push(element)
+        }
+    });
+    return out
+}
+
+console.log(even(x))
