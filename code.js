@@ -1,4 +1,5 @@
 let x= [1,2,3,4,5,6,7,8,9,10];
+let y= [-99,-98,-97,-96,-95,-94,-93,-92,-91,-90]
 
 function addAll(list) {
     let cache = 0;
@@ -72,3 +73,13 @@ function even(list) {
 }
 
 console.log(even(x))
+
+function addArray(list1,list2) {
+    let out = new Array
+    list1.forEach(element => {
+        out.push(list1.shift()+list2.shift())
+    });
+    return out
+}
+
+console.log(addArray(x,y))
